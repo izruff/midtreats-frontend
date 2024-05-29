@@ -1,15 +1,24 @@
 import "@/styles/globals.css";
-import { ThemeProvider } from "@/components/ui/theme-provider"
-import { Inter as FontSans } from "next/font/google"
+import { ThemeProvider } from "@/components/theme-provider";
+import { Inter as FontSans } from "next/font/google";
+import type { Metadata } from "next";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-})
+});
 
-export default function RootLayout({ children }: Readonly<{
+export const metadata: Metadata = {
+  title: "Midtreats",
+  description:
+    "Plan your next retreat in minutes. Highly personal, customizable, and takes zero effort.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
@@ -19,7 +28,7 @@ export default function RootLayout({ children }: Readonly<{
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased",
-            fontSans.variable
+            fontSans.variable,
           )}
         >
           <ThemeProvider
@@ -33,5 +42,5 @@ export default function RootLayout({ children }: Readonly<{
         </body>
       </html>
     </>
-  )
+  );
 }
