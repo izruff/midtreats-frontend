@@ -10,15 +10,9 @@
   "parserOptions": {
     "project": ["./tsconfig.json"]
   },
-  "plugins": ["@typescript-eslint", "import"],
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/consistent-type-definitions": "off",
-    "import/order": [
-      "error",
-      {
-        "groups": ["index","sibling", "parent", "internal", "external", "builtin", "object", "type"]
-      }
-    ]
+    "@typescript-eslint/consistent-type-definitions": "off"
   }
 }
