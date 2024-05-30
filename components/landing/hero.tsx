@@ -1,9 +1,12 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section id="hero" className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
+    <section
+      id="hero"
+      className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10"
+    >
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
@@ -19,7 +22,8 @@ export default function Hero() {
         </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Plan your next retreat in just minutes. Highly personal, easily customizable, and it takes zero effort.
+          Plan your next retreat in just minutes. Highly personal, easily
+          customizable, and it takes zero effort.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">

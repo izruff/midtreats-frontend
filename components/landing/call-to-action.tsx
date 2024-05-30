@@ -14,7 +14,8 @@ export default function CallToAction() {
           </span>
         </h3>
         <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
-          Start with 5 free itineraries per month using your email. Or just browse for free. No strings attached.
+          Start with 5 free itineraries per month using your email. Or just
+          browse for free. No strings attached.
         </p>
 
         <div className="flex justify-center flex-col md:flex-row space-y-4 w-full md:space-y-0 md:space-x-4">

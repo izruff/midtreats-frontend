@@ -19,19 +19,19 @@ const features: FeatureItem[] = [
     title: "Responsive Design",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    imageSrc: "/placeholder.jpg",  // TODO: Replace with actual image
+    imageSrc: "/placeholder.jpg", // TODO: Replace with actual image
   },
   {
     title: "Intuitive user interface",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    imageSrc: "/placeholder.jpg",  // TODO: Replace with actual image
+    imageSrc: "/placeholder.jpg", // TODO: Replace with actual image
   },
   {
     title: "AI-Powered insights",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    imageSrc: "/placeholder.jpg",  // TODO: Replace with actual image
+    imageSrc: "/placeholder.jpg", // TODO: Replace with actual image
   },
 ];
 
@@ -57,10 +57,7 @@ export default function Features() {
       <div className="flex flex-wrap md:justify-center gap-4">
         {featureKeywords.map((keyword: string) => (
           <div key={keyword}>
-            <Badge
-              variant="secondary"
-              className="text-sm"
-            >
+            <Badge variant="secondary" className="text-sm">
               {keyword}
             </Badge>
           </div>
@@ -90,5 +87,5 @@ export default function Features() {
         ))}
       </div>
     </section>
-  )
+  );
 }

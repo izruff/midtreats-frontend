@@ -1,0 +1,4 @@
+/*.ts
+
+# Shadcn-ui components
+components/ui/*.tsx

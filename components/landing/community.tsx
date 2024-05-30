@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export default function Community() {
   return (
@@ -34,5 +34,5 @@ export default function Community() {
         </div>
       </div>
     </section>
-  )
+  );
 }
