@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
+import ScrollToTop from "@/components/landing/scroll-to-top";
 import { Menu } from "lucide-react";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
@@ -43,7 +44,7 @@ export default function MainLayout({
 }>) {
   return (
     <>
-      <header className="sticky border-b-[1px] top-0 z-40 w-full">
+      <header className="sticky border-b-[1px] top-0 z-40 w-full bg-background">
         <NavigationMenu className="mx-auto">
           <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
             <NavigationMenuItem className="font-bold flex">
@@ -115,7 +116,9 @@ export default function MainLayout({
         </NavigationMenu>
       </header>
 
-      <main className="container flex flex-col">{children}</main>
+      {children}
+
+      <ScrollToTop />
     </>
   );
 }

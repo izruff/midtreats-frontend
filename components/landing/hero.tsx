@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Hero() {
   return (
-    <section className="grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
+    <section id="hero" className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
@@ -24,9 +24,11 @@ export default function Hero() {
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
           <Button className="w-full md:w-1/3" asChild>
-            <Link href="">Start Planning</Link>
+            <Link href="/create">Start Planning</Link>
           </Button>
-          <Button className="w-full md:w-1/3" variant="outline">Explore Destinations</Button>
+          <Button className="w-full md:w-1/3" variant="outline" asChild>
+            <Link href="/explore">Explore Places</Link>
+          </Button>
         </div>
       </div>
 

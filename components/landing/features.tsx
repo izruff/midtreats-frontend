@@ -19,19 +19,19 @@ const features: FeatureItem[] = [
     title: "Responsive Design",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    imageSrc: "/public/placeholder.jpg",  // TODO: Replace with actual image
+    imageSrc: "/placeholder.jpg",  // TODO: Replace with actual image
   },
   {
     title: "Intuitive user interface",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    imageSrc: "/public/placeholder.jpg",  // TODO: Replace with actual image
+    imageSrc: "/placeholder.jpg",  // TODO: Replace with actual image
   },
   {
     title: "AI-Powered insights",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    imageSrc: "/public/placeholder.jpg",  // TODO: Replace with actual image
+    imageSrc: "/placeholder.jpg",  // TODO: Replace with actual image
   },
 ];
 
@@ -49,15 +49,9 @@ const featureKeywords: string[] = [
 
 export default function Features() {
   return (
-    <section
-      id="features"
-      className="container py-24 sm:py-32 space-y-8"
-    >
+    <section id="features" className="container py-24 sm:py-32 space-y-8">
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
-        </span>
+        Why It Works
       </h2>
 
       <div className="flex flex-wrap md:justify-center gap-4">
@@ -83,13 +77,14 @@ export default function Features() {
             <CardContent>{description}</CardContent>
 
             <CardFooter>
-              <Image
-                src={imageSrc}
-                alt="About feature"
-                width={300}
-                height={300}
-                className="w-[200px] lg:w-[300px] mx-auto"
-              />
+              <div className="w-[200px] lg:w-[300px] mx-auto relative">
+                <Image
+                  src={imageSrc}
+                  alt="About feature"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
             </CardFooter>
           </Card>
         ))}

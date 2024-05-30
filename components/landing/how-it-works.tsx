@@ -18,7 +18,7 @@ const steps: StepItem[] = [
     icon: <MoveIcon />,
     title: "Expand",
     description:
-      "Add more places using our suggestions and finalize your destinations, then we'll devise the best travel routes.",
+      "Choose from a list of suggested places and finalize your destinations, then we'll devise the best routes.",
   },
   {
     icon: <MagicWandIcon />,
@@ -36,20 +36,12 @@ const steps: StepItem[] = [
 
 export default function HowItWorks() {
   return (
-    <section
-      id="howItWorks"
-      className="container text-center py-24 sm:py-32"
-    >
-      <h2 className="text-3xl md:text-4xl font-bold ">
-        How It{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Works{" "}
-        </span>
-        Step-by-Step Guide
+    <section id="how-it-works" className="container text-center py-24 sm:py-32">
+      <h2 className="text-3xl md:text-4xl font-bold">
+        How It Works
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        Start your journey with us in four simple steps. We&apos;ll take care of the rest.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
