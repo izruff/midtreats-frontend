@@ -13,7 +13,7 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Midtreats",
   description:
-    "Plan your next retreat in minutes. Highly personal, customizable, and takes zero effort.",
+    "Plan your next retreat in just minutes. Highly personal, easily customizable, and it takes zero effort.",
 };
 
 export default function RootLayout({

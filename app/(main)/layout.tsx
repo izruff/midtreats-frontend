@@ -16,7 +16,12 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { Menu } from "lucide-react";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
-const navList = [
+interface NavItem {
+  href: string;
+  label: string;
+}
+
+const navList: NavItem[] = [
   {
     href: "/about",
     label: "About",
